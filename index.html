@@ -1,0 +1,1147 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--FINAL IMPORTAÇÃO DE FONTS DO GOOGLE FONTS-->
+<!-- INICIO LINK PARA LEITURA DE ICONES PARA HTML DIRETO DO BOOTSTREEP-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- FINAL LINK PARA LEITURA DE ICONES PARA HTML DIRETO DO BOOTSTREEP-->
+
+<!-- INICIO LINK PARA BOOTSTTRAP 3.3 FRAMEWORK CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- FINAL LINK PARA BOOTSTTRAP 3.3 FRAMEWORK CSS-->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="sheep_painel/assets/bundles/font-awesome/css/font-awesome.min.css">
+<link rel='shortcut icon' type='image/x-icon' href='' />
+<meta name="author" content="p-themes">
+
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+  <!-- Demo styles -->
+  <style>
+  
+    html,
+    body {
+      position: relative;
+    }
+
+    body {
+          background-color: var(--fundo);
+
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding: 0 50px;
+    }
+
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+    background-color: var(--fundo);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+        .swiper-slide {
+            display: block;
+            width: 100%;
+        }
+.mySwiper .swiper-button-prev{
+border: solid 1px var(--detalhes);
+color: var(--detalhes);
+font-size: 50px;
+padding: 25px 25px;
+}
+ .mySwiper .swiper-button-next{
+border: solid 1px var(--detalhes);
+color: var(--detalhes);
+font-size: 50px;
+padding: 25px 25px;
+}
+
+  </style>
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+
+  <div class="cabecallho">
+
+   
+        <header id="home">
+            <img src="assets/img/logo-alvo.png" alt="">
+            <!--VERSÃO 1LINKS INTERNOS PARA A VERSÃO DESK TOP-->
+
+            <div class="corte ">
+
+            <div class="headerConteinerMeio ">
+                <a href="sobre.html">
+                    <i class="bi bi-file-earmark-pdf"></i>
+                    <p>Sobre nós</p>
+                </a>
+                <a href="carrinho.html">
+                    <i class="bi bi-cart2 cart">  <span>2</span> </i>
+                    <p>Comprar</p>
+                </a>
+                <a href="categorias.html">
+                    <i style="color: var(--detalhes);" class="bi bi-fire"></i>
+                    <p>Produtos</p>
+                </a>
+                <a href="#">
+                   <i class="bi bi-mic"></i>
+                    <p>Notícias</p>
+                </a>
+                <a href="#">
+                    <i class="bi bi-geo-alt"></i>
+                    <p>Localização</p>
+                </a>
+                <a href="#">
+                    <i class="bi bi-trophy"></i>
+                    <p>Garantia</p>
+                </a>
+                <a href="#">
+                    <i class="bi bi-reception-4"></i>
+                    <p>Investidores</p>
+                </a>
+                <a href="contato.html">
+                    <i class="bi bi-headset"></i>
+                    <p>Contatos</p>
+                </a>
+                <a href="#">
+                    <i class="bi bi-question-circle"></i>
+                    <p>FAQ</p>
+                </a>
+
+
+            </div>
+
+           
+            <!--LINKS EXTERNOS PARA OS ICONES DE CONTATOS-->
+            <div class="headerConteinerDireito">
+
+                <div class=" lupa">
+                    <button style="height: 25px; top: 0px;"><i class="bi bi-search"></i></button>
+                    
+                    <input style="height: 25px;" class="input-busca" type="text" placeholder=" pesquisar">
+
+                </div>
+            </div>
+<div class="mobile-item">
+
+           <i  class="bi bi-cart2 lupa-item-mobile cart" id="lupa-item-mobile" > <span>2</span> </i>
+
+
+         <i onclick="lupa()" class="bi bi-search lupa-item-mobile" id="lupa-item-mobile" ></i>
+            <!--MENÚ HAMBURGUER MOBILE-->
+            <div class="hamburuer" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+            </div>
+             
+           
+
+        </header>
+
+
+        
+        </div>
+
+         <!--VERSÃO 2LINKS EXTERNOS PARA A VERSÃO MOBILE-->
+            <div class="headerConteinerMeioMobile">
+                <a href="sobre.html"> Sobre nós  <p><i class="bi bi-file-earmark-pdf"></i></p> </a>
+                <a href="carrinho.html">Comprar <p><i class="bi bi-cart2"></i></p> </a>
+                <a href="categorias.html">Produtos <p><i  style="color: var(--detalhes);" class="bi bi-fire"></i></p> </a>
+                <a href="">Notícias <p><i class="bi bi-mic"></i></p> </a>
+                <a href="">Nossa localização <p><i class="bi bi-geo-alt"></i></p> </a>
+                <a href="">Garantia <p><i class="bi bi-trophy"></i></p> </a>
+                <a href="">Investidores <p><i class="bi bi-reception-4"></i></p> </a>
+
+                <a href="contato.html">Contatos <p><i class="bi bi-headset"></i></p> </a>
+                <a href="">FAQ <p><i class="bi bi-question-circle"></i></p> </a>
+            </div>
+
+
+
+
+
+
+
+
+
+        <div class="input-busca-mobile" id="input-busca-mobile">
+             <div class="lupa ">
+                    <button><i class="bi bi-search"></i></button>
+                    
+                    <input class="input-busca" type="text" placeholder=" pesquisar">
+
+                </div>
+        </div>
+
+
+        <div class="input-busca-mobile-frase" >
+          <div class="texto">
+<h1>Bem-vindo ao site da Taurus Empresa Estratégica de Defesa (EED) e integrante da Base Industrial de Defesa Brasileira.</h1>
+          </div>
+             
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+<div style="  margin-top: -4px;" id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner " style="position: relative;">
+
+<div class="topo-preto"></div>
+
+
+<div class="carousel-item active pt-lg-1 py-1 "  style="background-image: linear-gradient(#00000022, #0000002b), url(assets/img/banner02.png);
+ background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+clip-path: polygon(30% 8%, 37% 0, 100% 0, 100% 91%, 68% 91%, 59% 100%, 0 100%, 0 9%);
+
+">
+
+<div class="slid-container">
+
+<div class="slid-col-1">
+  <img src="" alt="">
+
+  <div class="descricao">
+    <h5>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique et nostrum molestiae non nobis maxime nemo ea. Ad, fugit excepturi.
+
+    </h5>
+
+    <div class="btn-banner">
+      <a href="">Ver mais detalhes</a>
+      <a href="">Ver mais detalhes</a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="slid-col-1">
+  <img src="" alt="">
+</div>
+</div>
+
+
+  
+
+</div>
+
+
+
+
+
+</div>
+
+<div class="">
+<button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+<span class=" swiper-button-prev" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+<span class=" swiper-button-next" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper" style="background-image: linear-gradient(#3d3d3d, #3d3d3d), url(assets/img/miliar-fundo.jpg);
+  
+  ">
+
+
+        <h1 class="text-center py-5 titulos">Destaque Taurus</h1>
+
+    <div class="swiper-wrapper">
+
+
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card"  >
+<div class="item-card-topo " style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card" >
+<div class="item-card-topo 
+" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card" >
+<div class="item-card-topo 
+" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card" >
+<div class="item-card-topo 
+" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card" >
+<div class="item-card-topo " style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+     <h1 class="text-center py-5 rodape-card">
+            <a href="">Ver todos os produtos</a>
+        </h1>
+  </div>
+
+    <!-- Swiper -->
+
+
+ 
+ 
+
+
+
+<div class="banner" style="padding: 50px 0;">
+    <img style=" width: 100%;" src="assets/img/banner02.png" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+        <h1 class="text-center py-5 titulos">Destaque Taurus</h1>
+
+    <div class="swiper-wrapper">
+
+
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card"  >
+<div class="item-card-topo " style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card" >
+<div class="item-card-topo 
+" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card" >
+<div class="item-card-topo 
+" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card" >
+<div class="item-card-topo 
+" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+      <div class="swiper-slide" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); position: relative;">
+        <div class="col-12  item-card" >
+<div class="item-card-topo " style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);
+">
+<p>Pistolas</p>
+
+     </div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+     <h1 class="text-center py-5 rodape-card">
+            <a href="">Ver todos os produtos</a>
+        </h1>
+  </div>
+
+    <!-- Swiper -->
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cardes" >
+    <h1 class="text-center py-5 titulos">Destaque Taurus</h1>
+    <div class="noticias tauros">
+
+
+<div class="pesquisar item-card" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%); 
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+</div>
+
+<div class="pesquisar item-card" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%);
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+
+<div class="pesquisar item-card" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%);
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+
+<div class="pesquisar item-card" style="clip-path: polygon(16% 0, 70% 0%, 100% 0, 100% 88%, 88% 100%, 30% 100%, 0 100%, 0 14%);
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="valor">R$ 555,000</div>
+            </a>
+        </div>
+    </div>
+        <h1 class="text-center  py-5 rodape-card">
+            <a href="">Ver todos os produtos</a>
+        </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-tauros"  >
+  <div class="item-tauros">
+  <i class="bi bi-power"></i>
+
+  </div>
+    <div class="item-auros">
+
+    <h2>Qualidade Taurus</h2>
+    <h5>Nós estamos comprometidos em:</h5>
+    </div>
+</div>
+
+
+<div class="container-tauros-dois">
+
+    <div class="item-tauros">
+        <i class="bi bi-shield"></i>
+        <p>
+            Fornecer produtos que atendam aos requisitos dos mercados de Defesa, Segurança, Civil e demais partes interessadas aplicáveis.
+        </p>
+
+    </div>
+    <div class="item-tauros">
+        <i class="bi bi-hdd-network"></i>
+        <p>
+           Desenvolver novos produtos e tecnologias, visando a excelência operacional, a segurança das pessoas e a rentabilidade do negócio.
+        </p>
+
+    </div>
+    <div class="item-tauros">
+        <i class="bi bi-award"></i>
+        <p>
+            Priorizar a satisfação dos clientes e buscar a melhoria contínua da eficácia do Sistema de Gestão.
+        </p>
+
+    </div>
+</div>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cardes p-1 ">
+    <h1 class="text-center py-5 titulos">Destaque Taurus</h1>
+    <div class="  noticias">
+
+
+<div class=" item-card" style="clip-path: polygon(14% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">
+                Desscriçaõ
+            </div>
+            <div class="ver-mais-noticias"> <a class="" href="">Saiba mais</a> </div>
+            </a>
+        </div>
+
+<div class=" item-card" style="clip-path: polygon(14% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="ver-mais-noticias"> <a class="" href="">Saiba mais</a> </div>
+            </a>
+        </div>
+
+<div class=" item-card" style="clip-path: polygon(14% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="ver-mais-noticias"> <a class="" href="">Saiba mais</a> </div>
+            </a>
+        </div>
+
+<div class=" item-card" style="clip-path: polygon(14% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="ver-mais-noticias"> <a class="" href="">Saiba mais</a> </div>
+            </a>
+        </div>
+<div class=" item-card" style="clip-path: polygon(14% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="ver-mais-noticias"> <a class="" href="">Saiba mais</a> </div>
+            </a>
+        </div>
+<div class=" item-card" style="clip-path: polygon(14% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="ver-mais-noticias"> <a class="" href="">Saiba mais</a> </div>
+            </a>
+        </div>
+<div class=" item-card" style="clip-path: polygon(14% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="ver-mais-noticias"> <a class="" href="">Saiba mais</a> </div>
+            </a>
+        </div>
+<div class=" item-card" style="clip-path: polygon(14% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="ver-mais-noticias"> <a class="" href="">Saiba mais</a> </div>
+            </a>
+        </div>
+<div class=" item-card" style="clip-path: polygon(14% 0, 100% 0, 100% 30%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 14%);
+
+
+">
+<div class="item-card-topo" style="clip-path: polygon(9% 0, 26% 0, 37% 0, 66% 0, 43% 100%, 10% 100%, 0 100%, 0 0);;
+">
+<p>Pistolas</p>
+
+</div>
+         <a href="">
+            <img style="clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 84%, 87% 100%, 30% 100%, 0 100%, 0% 30%);
+" src="assets/img/arma.jpg" alt="" class="w-100">
+            <div class="desc">Descricao</div>
+            <div class="ver-mais-noticias"> <a class="" href="">Saiba mais</a> </div>
+            </a>
+        </div>
+    </div>
+        <h1 class="text-center py-5 rodape-card">
+            <a href="">Ver todos os produtos</a>
+        </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-email" style="background-image: linear-gradient(#000000d4, #000000da), url(assets/img/banner02.png);">
+    <div class="container-email-item">
+        <h1>Receba todas as novidades sobre a Taurus.</h1>
+    </div>
+    <div class="container-email-item input-email" >
+        <input class="w-100" type="text" placeholder="deixe seu e-mail">
+    </div>
+    <div class="container-email-item">
+        <input type="checkbox" name="" id="">
+        <p>Li e concordo com as Políticas de Privacidades</p>
+    </div>
+    <div class="container-email-item">
+       <button>Cadastrar meu E-mail</button>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- INICIO RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+<footer class="rodape">
+
+<!-- INICIO LINHA RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+<div class="rodape-linha">  
+
+   <!-- INICIO COLUNA 1 RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+   <div class="rodape-col">
+
+      <figure style="
+  text-align:center;">
+      </figure>
+      <p>lkkkkkkkk</p>
+      <span> <i class="bx bx-phone"></i> 99999999</span>
+      <span> <i class="bx bx-location-plus"></i>rua manau Nº 09</span>
+      <span> <i class="bx bxs-envelope"></i> rafa@gmail.com</span>
+
+   </div>
+   <!-- FIM COLUNA 1 RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+
+   <!-- INICIO COLUNA 2 RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+   <div class="rodape-col">
+      <h5>Informações</h5>
+      <a href="/empresa" title="Sobre a empresa "> <i class="bx bx-chevron-right"></i> Sobre Nós</a>
+         <a href="/blog" title="Noticias do site "> <i class="bx bx-chevron-right"></i> Blog</a>
+         <a href="/pagina-categorias" title="Categorias do site "> <i class="bx bx-chevron-right"></i> Categorias</a>
+         <a href="/pagina-marcas" title="Marcas do site "> <i class="bx bx-chevron-right"></i> Marcas</a>
+         <a href="/politica" title="Politica de Privacidade "> <i class="bx bx-chevron-right"></i> Política de Privacidade</a>
+      
+   </div>
+   <!-- FIM COLUNA 2 RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+
+   <!-- INICIO COLUNA 3 RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+   <div class="rodape-col">
+     
+   <h5>Suporte</h5>
+         <a href="/anunciar" title="Anuncie no site "> <i class="bx bx-chevron-right"></i> Anunciar</a>
+         <a href="/anunciar" title="Plano e preços do site "> <i class="bx bx-chevron-right"></i>Planos e Preços</a>
+         <a href="/cliente" title="Acesse sua conta no site "> <i class="bx bx-chevron-right"></i> Minha Conta</a>
+         <a href="/revendas" title="Escolha uma das melhores revendas do site "> <i class="bx bx-chevron-right"></i> Revendas</a>
+      </div>
+   <!-- FIM COLUNA RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+
+   <!-- INICIO COLUNA 4 RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+   <div class="rodape-col">
+      <h5>Boletim Informativo</h5>
+      <p class="texto">Receba novidades do nosso classificados de veículos</p>
+      <form action="/boletim&token" method="post">
+         <input type="text" name="email" placeholder="Seu Melhor E-mail">
+         <input type="hidden" name="status"value="S">
+         <input type="hidden" name="sheep_firewall" value="">
+         <button type="submit" name="sendSheep"> Quero me cadastrar</button>
+      </form>
+   </div>
+   <!-- FIM COLUNA 4 RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+
+</div>
+ <!-- FIM LINHA RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+
+<!-- INICIO DIREITOS RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+<div class="rodape-direitos py-5">
+    <p>&copy; <span>MSVEICULOS</span> Todos os direitos reservados</p>
+
+    <div class="rodape-redes">
+  
+
+  <img src="assets/img/logo-alvo.png" alt="">
+
+                            
+    </div>
+
+</div>
+<!-- FIM DIREITOS RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+
+</footer>
+<!-- FIM RODAPE DO SITE MAYKONSILVERIA.COM.BR E MSFLIX.COM.BR-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a id="subir" href="#">&#128770;</a>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ 
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+        loop: true, // Ativa o loop contínuo dos slides
+
+     
+      
+       navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>
